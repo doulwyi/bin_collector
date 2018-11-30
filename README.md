@@ -1,5 +1,5 @@
 
-## How to use
+# How to use
 
 ```bash
 $ mkdir binCollector
@@ -7,7 +7,7 @@ $ cd binCollector/
 ~/binCollector $ git clone https://github.com/doulwyi/bin_collector.git
 ```
 
-###Install all project requirements 
+##Install all project requirements 
 ```bash
 pip install -r requirements.txt
 ```
