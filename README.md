@@ -22,6 +22,6 @@ $ python cli.py -date 20180405
 ### How to run all tests
 
 ```bash
-python -m unittest tests.py
+python -m unittest
 ```
 

@@ -1,7 +1,7 @@
 import argparse
 import logging
 
-from bin_collection import get_bin_collector_infos
+from binCollector.bin_collection import get_bin_collector_infos
 
 # Logging config.
 logging.basicConfig(level=logging.INFO,

@@ -1,18 +1,22 @@
 import unittest
 
-from bin_collection import get_closest_date, get_bin_collector_infos, get_info_from_server
+from binCollector.bin_collection import get_closest_date, get_bin_collector_infos, get_info_from_server
 
 
 class TestDateTime(unittest.TestCase):
     def setUp(self):
         self.date_list = ['20171228', '20180104', '20180110', '20180116', '20180123', '20180131', '20180202']
-        self.date = '20180201'
 
-    def test_date_is_valid(self):
+    def test_date_is_invalid(self):
         """Date format must be yyyymmdd"""
         wrong_date = '2018-11-29'
         with self.assertRaises(ValueError):
             get_closest_date(wrong_date, self.date_list)
+
+    def test_date_is_valid(self):
+        """Date format must be yyyymmdd"""
+        date = '20180202'
+        self.assertEqual(date, get_closest_date(date, self.date_list))
 
     def test_date_must_be_lower_than_last_list_item(self):
         wrong_date = '20180203'
