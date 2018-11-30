@@ -4,7 +4,7 @@
 ```bash
 $ mkdir binCollector
 $ cd binCollector/
-~/binCollector $ git clone 
+~/binCollector $ git clone https://github.com/doulwyi/bin_collector.git
 ```
 
 #####Install all project requirements 
